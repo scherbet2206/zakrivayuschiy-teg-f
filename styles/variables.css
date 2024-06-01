@@ -8,8 +8,8 @@
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-  --font-main: "Inter-Variable", sans-serif;
-  --font-accent: "PressStart2P", fantasy;
+  --font-main: "Inter-Variable";
+  --font-accent: "PressStart2P";
   --font-size: 18px;
   --font-weight-text: 400;
   --accent-font-weight-text: 700;

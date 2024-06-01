@@ -19,6 +19,8 @@
   --text-color: #000000;
   --label-text-outline-color: #ffffff;
   --button-text-color: #ffffff;
+  --font-weight-text: 400;
+  --accent-font-weight-text: 700;
 }
 
 :root.theme-dark {
@@ -35,6 +37,8 @@
   --text-color: #00cc14;
   --label-text-outline-color: #000000;
   --button-text-color: #00cc14;
+  --font-weight-text: 465;
+  --accent-font-weight-text: 785;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,5 +55,7 @@
     --text-color: #00cc14;
     --label-text-outline-color: #000000;
     --button-text-color: #00cc14;
+    --font-weight-text: 465;
+    --accent-font-weight-text: 785;
   }
 }

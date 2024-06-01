@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -109,7 +109,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -175,7 +175,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -239,7 +239,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -305,7 +305,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -372,7 +372,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -436,7 +436,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -502,7 +502,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -570,7 +570,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -637,26 +637,26 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
       </ul>
+      <div class="save-container">
+        <button
+          class="save__button-floppy button"
+          type="button"
+          onclick="window['dialog-floppy'].showModal()"
+          aria-controls="dialog-floppy"
+        >
+          <svg class="save__button-floppy-icon" viewBox="0 0 21 21">
+            <use href="./svg/floppy.svg#floppy" />
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
     </main>
-    <footer class="footer">
-      <button
-        class="footer__button-floppy"
-        type="button"
-        onclick="window['dialog-floppy'].showModal()"
-        aria-controls="dialog-floppy"
-      >
-        <svg class="footer__button-floppy-icon" viewBox="0 0 21 21">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
     <dialog class="dialog-floppy" id="dialog-floppy">
       <div class="dialog__container">
         <svg class="dialog__button-floppy-icon" viewBox="0 0 21 21">
@@ -667,8 +667,7 @@
       <form method="dialog">
         <button
           type="submit"
-          class="footer__button-floppy dialog__button-floppy"
-          onclick="window['dialog-floppy'].close()"
+          class="save__button-floppy dialog__button-floppy button"
         >
           <span class="floppy__button-text">ок</span>
         </button>
