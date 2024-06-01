@@ -1,1 +1,1 @@
-https://scherbet2206.github.io/zakrivayuschiy-teg-f/
+https://github.com/scherbet2206/zakrivayuschiy-teg-f
