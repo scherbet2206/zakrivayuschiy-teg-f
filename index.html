@@ -647,7 +647,7 @@
     <footer class="footer">
       <button
         class="footer__button-floppy"
-        type="button__floppy"
+        type="button"
         onclick="window['dialog-floppy'].showModal()"
         aria-controls="dialog-floppy"
       >
@@ -664,13 +664,15 @@
         </svg>
         <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button
-        type="submit"
-        class="footer__button-floppy dialog__button-floppy"
-        onclick="window['dialog-floppy'].close()"
-      >
-        <span class="floppy__button-text">ок</span>
-      </button>
+      <form method="dialog">
+        <button
+          type="submit"
+          class="footer__button-floppy dialog__button-floppy"
+          onclick="window['dialog-floppy'].close()"
+        >
+          <span class="floppy__button-text">ок</span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

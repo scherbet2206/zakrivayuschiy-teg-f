@@ -161,6 +161,17 @@
   z-index: 1;
 }
 
+@supports (
+  (text-stroke: 1px var(--label-text-outline-color)) or
+    (-webkit-text-stroke: 1px var(--label-text-outline-color))
+) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--label-text-outline-color);
+    text-stroke: 1px var(--label-text-outline-color);
+    text-shadow: none;
+  }
+}
+
 .card__image {
   display: block;
   inline-size: 100%;
@@ -173,6 +184,9 @@
   font-size: 18px;
   font-family: var(--font-main);
   color: var(--text-color);
+  padding: 25px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .card__description p:not(:last-of-type) {
@@ -254,12 +268,6 @@
 
 .sparks {
   opacity: 0;
-}
-
-.card__description {
-  padding: 25px;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .footer {
